@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformer Attention, Visualized</title>
+    <meta name="description" content="Step-by-step 3D visualisation of a Transformer attention head and multi-head attention, with every number shown." />
+  </head>
+  <body>
+    <div id="app">
+      <main id="viewport">
+        <div id="loading">Loading…</div>
+        <div id="tooltip" role="tooltip" hidden></div>
+        <button id="reset-view" class="ghost" title="Re-frame the camera (C)">Reset view</button>
+        <div id="hint">Click to continue · drag to orbit · <b>Shift</b>+drag to pan · scroll to zoom · hover a cell to see its math</div>
+      </main>
+      <aside id="panel">
+        <header class="brand">
+          <div class="logo">Q·Kᵀ</div>
+          <div>
+            <div class="brand-title">Transformer Attention</div>
+            <div class="brand-sub">visualised one number at a time</div>
+          </div>
+        </header>
+        <nav id="progress" aria-label="Steps"></nav>
+        <div class="meta"><span id="section"></span><span id="counter"></span></div>
+        <h1 id="title"></h1>
+        <article id="body"></article>
+        <div id="legend"></div>
+        <div class="controls">
+          <button id="prev" class="ghost" title="Previous step (←)">← Back</button>
+          <button id="replay" class="ghost" title="Replay this step (R)">↻ Replay</button>
+          <button id="next" class="primary" title="Next step (→ / Space)">Next →</button>
+        </div>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
