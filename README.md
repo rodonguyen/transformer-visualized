@@ -1,5 +1,13 @@
 # Transformer Attention, Visualized
 
+[![Live demo](https://img.shields.io/badge/demo-live-7c3aed?logo=vercel&logoColor=white)](https://transformer-visualized.vercel.app)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](#contributing)
+[![GitHub stars](https://img.shields.io/github/stars/rodonguyen/transformer-visualized?style=social)](https://github.com/rodonguyen/transformer-visualized/stargazers)
+[![three.js](https://img.shields.io/badge/three.js-r186-000000?logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![GSAP](https://img.shields.io/badge/GSAP-3-0AE448?logo=greensock&logoColor=white)](https://gsap.com/)
+
 An interactive 3D walkthrough of a Transformer **attention head** and **multi-head attention**, built with three.js. Every number is on screen, and you can check each one by hand.
 
 **Live demo: https://transformer-visualized.vercel.app**
@@ -106,6 +114,17 @@ This is a static site: `npm run build` writes everything to `dist/`, and any sta
 ## Built with
 
 [three.js](https://threejs.org/) (WebGL, orbit controls, HTML labels) · [GSAP](https://gsap.com/) (step timelines) · [troika-three-text](https://github.com/protectwise/troika/tree/main/packages/troika-three-text) (sharp numbers in 3D) · [KaTeX](https://katex.org/) (formulas) · [Vite](https://vite.dev/) · [Fontsource](https://fontsource.org/) (Inter, JetBrains Mono)
+
+## Contributing
+
+Contributions are welcome: bug reports, clearer explanations, fixes, and new steps (for example a causal mask or positional encodings).
+
+1. Open an [issue](https://github.com/rodonguyen/transformer-visualized/issues) to report a bug, or to discuss an idea before you start on something big.
+2. Fork the repo, create a branch, then run `npm install` and `npm run dev`.
+3. Make sure `npm run build` passes, and click through the steps you changed. The progress bar jumps straight to any step.
+4. Open a pull request that explains what changed and why.
+
+[docs/architecture.md](docs/architecture.md) explains how the scene, the steps and the animations fit together.
 
 ## License
 
